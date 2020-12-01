@@ -1,0 +1,49 @@
+// adding variables
+$darkGray: hsl(0, 0%, 63%);
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$veryDarkGray: hsl(0, 0%, 27%);
+$fontSize: 12px;
+$regular: 500;
+$medium: 600;
+$bold: 700;
+
+// resetting browser defaults
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Spartan', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+// animation
+@keyframes contentAppear {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes Image {
+  from {
+    // opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    // opacity: 1;
+    transform: translateX(0);
+  }
+}

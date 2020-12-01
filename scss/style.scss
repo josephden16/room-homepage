@@ -1,0 +1,220 @@
+@import "./config";
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  gap:0;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  background: black;
+  color: #fff;
+  padding: 8px;
+  font-weight: $bold;
+  position: relative;
+  margin: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.logo {
+  position: relative;
+  top: 40px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.about {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.about__image__img {
+  width: 100%;
+  height: 100%;
+}
+
+.about__content {
+  margin: 25px 35px 60px 35px;
+}
+
+.about__content__title {
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-size: 19px;
+  letter-spacing: 0.2em;
+}
+
+.about__content__body {
+  line-height: 1.4em;
+  color: $veryDarkGray;
+}
+
+.intro {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.intro__image__img {
+  width: 100%;
+  height: 100%;
+  display: none;
+  animation: Image forwards 400ms ease-out;
+}
+
+// set the intro images
+#image-one {
+  content: url("../images/mobile-image-hero-1.jpg");
+}
+
+#image-two {
+  content: url("../images/mobile-image-hero-2.jpg");
+}
+
+#image-three {
+  content: url("../images/mobile-image-hero-3.jpg");
+}
+
+.intro__content {
+  padding: 25px 35px 60px 35px;
+  display: none;
+  margin: 0;
+  animation: contentAppear forwards 400ms ease-out;
+}
+
+.intro__content__title {
+  padding: 20px 0;
+  font-size: 19px;
+  letter-spacing: 0.2em;
+}
+
+.intro__content__body {
+  line-height: 1.4em;
+  color: $veryDarkGray;
+}
+
+.shop-now {
+  background: transparent;
+  margin: 40px 0;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 13px;
+  width: auto;
+  cursor: pointer;
+  transition: opacity 200ms ease-out;
+  text-align: left;
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+.image-control {
+  float: right;
+  position: relative;
+  bottom: 50px;
+  z-index: 99999;
+}
+
+.control-button {
+  background: $black;
+  border: none;
+  width: 60px;
+  height: 50px;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  &:nth-of-type(1) {
+    position: relative;
+    left: 6px;
+  }
+
+  &:active,
+  &:focus {
+    background: $veryDarkGray;
+  }
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: opacity 800ms ease-out;
+  opacity: 1;
+  z-index: 99;
+}
+
+// open the nav
+.nav-open {
+  height: 100%;
+  background: transparent;
+  text-align: center;
+}
+
+.hamburger {
+  background: transparent;
+  border: none;
+  position: fixed;
+  left: 22px;
+  top: 40px;
+}
+
+.nav__links {
+  width: 100%;
+  background: $white;
+  position: fixed;
+  top: 0;
+  padding: 20px 0 30px 0;
+  display: none;
+  opacity: 1;
+  z-index: 999999;
+}
+
+// open the nav links
+.nav__links-open {
+  background-color: $white;
+  display: block;
+  text-align: center;
+}
+
+.close {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 40px;
+  left: 22px;
+  margin-right: 20px;
+}
+
+.links {
+  width: 100%;
+  padding: 25px 0;
+  opacity: 1;
+  z-index: 99999;
+}
+
+.links__link {
+  text-decoration: none;
+  color: $black;
+  float: right;
+  padding: 0 18px 0 8px;
+  font-weight: $medium;
+}
+
+.active {
+  display: block;
+}
+
+.active-content {
+  display: block;
+  opacity: 1;
+}
+
+@import "./media";

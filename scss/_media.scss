@@ -1,0 +1,148 @@
+@media screen and (min-width: 500px) {
+  #image-one {
+    content: url("../images/desktop-image-hero-1.jpg");
+  }
+
+  #image-two {
+    content: url("../images/desktop-image-hero-2.jpg");
+  }
+
+  #image-three {
+    content: url("../images/desktop-image-hero-3.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .intro {
+    display: grid;
+    grid-template-columns: 55% 45%;
+  }
+
+  .shop-now {
+    margin: 0;
+  }
+
+  .intro__content {
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    align-content: center;
+    min-width: 470px;
+    max-width: 530px;
+    height: 70%;
+    margin: 20px auto 0 auto;
+  }
+
+  .intro__content__title {
+    min-width: 400px;
+    font-size: 2.7em;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+
+  .intro__content__body {
+    margin-bottom: 20px;
+    justify-content: start;
+    line-height: 1.6em;
+    margin-bottom: 40px;
+  }
+
+  .active-content {
+    display: flex;
+    opacity: 1;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    position: relative;
+  }
+
+  .about__content {
+    margin: 65px 55px 65px 55px;
+  }
+
+  .about__content__body {
+    line-height: 1.8em;
+  }
+
+  .nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .intro__image,
+  .intro__image__img {
+    height: 100%;
+  }
+
+  .logo {
+    width: 70px;
+    height: 18px;
+    margin: auto;
+    position: relative;
+    left: 20px;
+    margin-right: 80px;
+    top: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav__links {
+    width: 100%;
+    background: transparent;
+    position: relative;
+    top: 0;
+    padding: 20px 0;
+    display: block;
+    opacity: 1;
+    z-index: 999999;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .links {
+    width: 100%;
+    padding: 25px 0;
+    opacity: 1;
+    z-index: 99999;
+  }
+
+  .links__link {
+    color: $white;
+    float: none;
+    margin: 0 22px 8px 8px;
+    padding: 8px 0;
+    &:hover {
+      border-bottom: 3px solid $white;
+    }
+  }
+
+  .image-control {
+    position: relative;
+    left: 138px;
+    bottom: 80px;
+  }
+
+  .control-button {
+    background: $black;
+    border: none;
+    width: 70px;
+    height: 80px;
+    z-index: 9999;
+  }
+}
